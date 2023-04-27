@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="calculator.ico">
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="calculatorbody">
+        <span class="calculatorbodyfront">
+      <div class="calculatorbody__screen">
+        <img src="" />
+        <div class="screen__calcHistoy" id="calcHistoy">
+            <span class="firstOperand" id="firstOperand"></span>
+            <span class="Operator" id="Operator"></span>
+            <span class="secondOperand" id="secondOperand"></span>
+        </div>
+        <span class="screen__resault" id="resault">0</span>
+      </div>
+      <div class="calculatorbody__buttons">
+        <button id="History" class="buttons__history">
+          <span id="HistorySpan" class="frontH">M</span>
+        </button>
+        <button id="clear" class="buttons__cancel">
+          <span id="clearSpan" class="frontC">C</span>
+        </button>
+        <button id="backspace" class="buttons__backspace">
+          <span id="backspaceSpan" class="frontBS">&#8592;</span>
+        </button>
+        <button id="division" class="buttons__operator">
+          <span id="divisionSpan" class="frontOp">&#247;</span>
+        </button>
+        <button id="seven" class="buttons__others">
+          <span id="sevenSpan" class="frontO">7</span>
+        </button>
+        <button id="eight" class="buttons__others">
+          <span id="eightSpan" class="frontO">8</span>
+        </button>
+        <button id="nine" class="buttons__others">
+          <span id="nineSpan" class="frontO">9</span>
+        </button>
+        <button id="multiple" class="buttons__operator">
+          <span id="multipleSpan" class="frontOp">&#215;</span>
+        </button>
+        <button id="four" class="buttons__others">
+          <span id="fourSpan" class="frontO">4</span>
+        </button>
+        <button id="five" class="buttons__others">
+          <span id="fiveSpan" class="frontO">5</span>
+        </button>
+        <button id="six" class="buttons__others">
+          <span id="sixSpan" class="frontO">6</span>
+        </button>
+        <button id="minus" class="buttons__operator">
+          <span id="minusSpan" class="frontOp">-</span>
+        </button>
+        <button id="one" class="buttons__others">
+          <span id="oneSpan" class="frontO">1</span>
+        </button>
+        <button id="two" class="buttons__others">
+          <span id="twoSpan" class="frontO">2</span>
+        </button>
+        <button id="three" class="buttons__others">
+          <span id="threeSpan" class="frontO">3</span>
+        </button>
+        <button id="sum" class="buttons__operator">
+          <span id="sumSpan" class="frontOp">+</span>
+        </button>
+        <button id="sign" class="buttons__others">
+          <span id="signSpan" class="frontO">-/+</span>
+        </button>
+        <button id="zero" class="buttons__others">
+          <span id="zeroSpan" class="frontO">0</span>
+        </button>
+        <button id="decimal" class="buttons__others">
+          <span id="decimalSpan" class="frontO">.</span>
+        </button>
+
+        <button id="equal" class="buttons__assign">
+          <span id="equalSpan" class="front">=</span>
+        </button>
+      </div>
+    </span>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Sigmar", cursive;
+  font-weight: 600;
+
+  background: hsla(217, 100%, 50%, 1);
+  background: linear-gradient(
+    90deg,
+    hsla(217, 100%, 50%, 1) 0%,
+    hsla(186, 100%, 69%, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.calculatorbody {
+   box-shadow: 5px 5px 25px 2px #213177;
+  background: #022536;
+  border-radius: 20px;
+  border: none;
+  padding: 0;
+  outline-offset: 4px;
+  outline: none;
+  width: 320px;
+  min-width: 320px;
+  height: 524px;
+  display: flex;
+  
+}
+.calculatorbodyfront {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0;
+  border-radius: 20px;
+  width: 320px;
+  min-width: 320px;
+  height: 520px;
+  font-size: 1.25rem;
+  background: #023047;
+  color: #001d3d;
+  transform: translateY(-8px);
+
+}
+.calculatorbody__screen {
+  width: 90%;
+  height: 125px;
+  background-color: #adc178;
+  border: 5px solid #31572c;
+  border-radius: 15px;
+  box-shadow: inset 1px 1px 2px 3px #4f772d;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.screen__calcHistoy {
+  display: flex;
+  justify-content: end;
+  width: 90%;
+  height: 50%;
+  padding: 20px 0;
+  text-align: right;
+  font-size: 1.6rem !important;
+  font-weight: 600;
+}
+.Operator{
+  padding: 0 4px;
+}
+
+.screen__resault {
+  font-size: 2.2rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 90%;
+  height: 50%;
+  text-align: right;
+  
+}
+
+.calculatorbody__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Thanks Josh WComeau website and cool "Building a Magical 3D Button" article */
+/* https://www.joshwcomeau.com/animation/3d-button/ */
+
+.buttons__others {
+  font-family: "Sigmar", cursive;
+  font-size: 1.25rem;
+  font-weight: 600;
+  width: 21%;
+  color: #001d3d;
+  background: hsl(0, 0%, 58%);
+  border-radius: 12px;
+  border: 2px solid rgb(27, 27, 27);
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  outline: none;
+}
+.frontO {
+  display: block;
+  padding: 12px 8px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  background: hsl(0, 0%, 89%);
+  color: #001d3d;
+  transform: translateY(-6px);
+}
+.buttons__others:active .frontO {
+  transform: translateY(-1px);
+}
+.frontO:hover {
+  background-color: hsl(0, 0%, 66%)!important;
+}
+
+.buttons__cancel {
+  font-family: "Sigmar", cursive;
+  width: 21% !important;
+  background: hsl(340deg 100% 32%);
+  border-radius: 12px;
+  border: 2px solid rgb(27, 27, 27);  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  outline: none;
+}
+.frontC {
+  display: block;
+  padding: 12px 21px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  background: hsl(345deg 100% 47%);
+  color: white;
+  transform: translateY(-6px);
+}
+.buttons__cancel:active .frontC {
+  transform: translateY(-1px);
+}
+.frontC:hover {
+  background-color:  hsl(340deg 100% 40%) !important;
+}
+
+.buttons__backspace {
+  font-family: "Sigmar", cursive;
+  width: 21% !important;
+  background: hsl(23, 98%, 35%);
+  border-radius: 12px;
+  border: 2px solid rgb(27, 27, 27);  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  outline: none;
+}
+.frontBS {
+  display: block;
+  padding: 6px 5px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  background: hsl(23, 97%, 46%);
+  color: white;
+  transform: translateY(-6px);
+}
+.buttons__backspace:active .frontBS {
+  transform: translateY(-1px);
+}
+.frontBS:hover {
+  background-color: hsl(23, 97%, 42%) !important;
+}
+.frontBS{
+  font-size: 1.8rem !important;
+  font-weight: 900;
+}
+
+
+.buttons__assign {
+  font-family: "Sigmar", cursive;
+  background: hsl(201, 100%, 32%);
+  border-radius: 12px;
+  border: 2px solid rgb(27, 27, 27);  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  outline: none;
+  width: 21%;
+}
+.front {
+  display: block;
+  padding: 6px 5px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  background:  	hsl(190, 100%, 42%);
+  color: white;
+  transform: translateY(-6px);
+}
+.buttons__assign:active .front {
+  transform: translateY(-1px);
+}
+
+.front:hover {
+  background-color: hsl(201, 100%, 44%) !important;
+}
+.front{
+  font-size: 1.8rem !important;
+  font-weight: 900;
+}
+
+.buttons__operator {
+  font-family: "Sigmar", cursive;
+  background: hsl(120, 100%, 25%);
+  border-radius: 12px;
+  border: 2px solid rgb(27, 27, 27);  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  outline: none;
+  width: 21%;
+}
+.frontOp {
+  display: block;
+  padding: 6px 10px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  background:  	hsl(101, 100%, 35%);
+  color: white;
+  transform: translateY(-6px);
+}
+.buttons__operator:active .frontOp {
+  transform: translateY(-1px);
+}
+
+.frontOp:hover {
+  background-color: hsl(120, 100%, 31%) !important;
+}
+.frontOp{
+  font-size: 1.8rem !important;
+}
+
+.buttons__history {
+  font-family: "Sigmar", cursive;
+  background: hsl(40, 100%, 40%);
+  border-radius: 12px;
+  border: 2px solid rgb(27, 27, 27);  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  outline: none;
+  width: 21%;
+}
+.frontH {
+  display: block;
+  padding: 12px 21px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  background:  	hsl(40, 100%, 50%);
+  color: white;
+  transform: translateY(-6px);
+}
+.buttons__history:active .frontH {
+  transform: translateY(-1px);
+}
+
+.frontH:hover {
+  background-color: hsl(40, 100%, 46%) !important;
+}
